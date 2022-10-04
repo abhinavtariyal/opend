@@ -1,0 +1,5 @@
+service : {
+  getImageBytes: () -> (vec nat8) query;
+  getName: () -> (text) query;
+  getNftOwner: () -> (principal) query;
+}
