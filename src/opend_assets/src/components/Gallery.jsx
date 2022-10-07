@@ -9,7 +9,7 @@ function fetchNfts(){
   if(props.ids != undefined){
     setItems(
       props.ids.map((NFTid) => (
-        <Item id = {NFTid} key={NFTid.toText()}/>
+        <Item id = {NFTid} key={NFTid.toText()} role = {props.role}/>
       ))
     )
   }

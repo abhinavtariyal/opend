@@ -4,5 +4,6 @@ export interface NFT {
   'getImageBytes' : () => Promise<Array<number>>,
   'getName' : () => Promise<string>,
   'getNftOwner' : () => Promise<Principal>,
+  'transferOwnership' : (arg_0: Principal) => Promise<string>,
 }
 export interface _SERVICE extends NFT {}
